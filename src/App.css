@@ -41,12 +41,12 @@ p {
 	outline: none;
 }
 button {
-	font-size: 20px;
+	font-size: 24px;
 	border: none;
 	color: white;
 	background-color: #28df99;
 	margin-top: 10px;
-	padding: 10px;
+	padding: 10px 10px;
 	cursor: pointer;
 	border-radius: 30px;
 }
@@ -194,7 +194,7 @@ footer {
 	width: 100%;
 	font-size: 18px;
 	padding: 5px;
-	border: 5px solid #69F0AE;
+	border: 5px solid;
 	border-width: 1px 1px 5px 1px;
 	outline: none;
 	margin-bottom: 5px;
@@ -207,7 +207,7 @@ footer {
 }
 
 .ajouter-recette > * {
-	border: 5px solid #F44336;
+	
 	border-width: 1px 1px 5px 1px;
 }
 
