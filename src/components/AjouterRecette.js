@@ -32,7 +32,7 @@ class AjouterRecette extends Component {
                     <input value={this.state.image} onChange={this.handleChange} name='image' type='text' placeholder={'Nom de l\'image'}/>
                     <textarea value={this.state.ingredients} onChange={this.handleChange} name='ingredients' rows='3'placeholder='Liste des ingrédients' />
                     <textarea value={this.state.instructions} onChange={this.handleChange} name='instructions' rows='15' placeholder='Liste des instructions' />
-                    <button type="submit"> Ajouter ma recette</button>
+                    <button type="submit"> Ajouter une nouvelle recette </button>
                 </form>
 
             </div>

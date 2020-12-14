@@ -1,7 +1,7 @@
-import React from 'react'
+import React, { Component, Fragment} from 'react'
 import { Redirect } from 'react-router-dom'
 
-class Connexion extends React.Component {
+class Connexion extends Component {
   state = {
     pseudo: '',
     goToApp: false
@@ -23,6 +23,7 @@ class Connexion extends React.Component {
     }
 
     return (
+      <Fragment>
       <div className='connexionBox'>
         <form className='connexion' onSubmit={this.goToApp} >
           <h1>Ma Boîte à Recettes</h1>
@@ -33,10 +34,11 @@ class Connexion extends React.Component {
             placeholder='Nom du Chef'
             pattern='[A-Za-z-]{1,}'
             required />
-          <button type='submit'>GO</button>
+          <button type='submit'> Se connecter </button>
           <p>Pas de caractères spéciaux.</p>
         </form>
       </div>
+      </Fragment>
     )
   }
 }

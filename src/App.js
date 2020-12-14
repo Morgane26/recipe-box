@@ -16,7 +16,7 @@ class App extends Component {
   }
 
   componentDidMount () {
-    this.ref = base.syncState(`/${this.state.pseudo} / recettes` , {
+    this.ref = base.syncState(`/${this.state.pseudo}/recettes` , {
       context: this,
       state: 'recettes'
     } )
@@ -62,6 +62,7 @@ class App extends Component {
           { cards }
         </div>
         <Admin
+          pseudo={this.state.pseudo}
           recettes={this.state.recettes}
           ajouterRecette={this.ajouterRecette}
           majRecette={this.majRecette}

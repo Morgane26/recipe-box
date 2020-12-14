@@ -35,7 +35,6 @@ const Card = ({ details }) => {
 
 
             </div>
-
         </div>
     )
 }
